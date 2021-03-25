@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "406704195795",
+    "firebase_url": "https://tonafilavf-2019.firebaseio.com",
+    "project_id": "tonafilavf-2019",
+    "storage_bucket": "tonafilavf-2019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406704195795:android:3d2be805519ec0e4",
+        "android_client_info": {
+          "package_name": "com.unigranrio.tonafilavf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406704195795-83bg0luprsgv3vj0o6d457mretcf8vir.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unigranrio.tonafilavf",
+            "certificate_hash": "feb4000b88d875f1617b14e3438f84e5d5502b52"
+          }
+        },
+        {
+          "client_id": "406704195795-fp6vtcdvf6d9ee9mff2ioh126ta0uhpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPRZikiGJbY0pODf5pQACVUIE1ZzakJ84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406704195795-fp6vtcdvf6d9ee9mff2ioh126ta0uhpn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

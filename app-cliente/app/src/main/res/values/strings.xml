@@ -1,0 +1,77 @@
+<resources>
+
+    <string name="app_name">TôNaFila!</string>
+    <string name="About">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="FaixaDePreco">R$10,00 - R$30,00</string>
+    <string name="Horario">10h00 - 00h30</string>
+    <string name="FormasDePagamento">Aceitamos todos os cartões.</string>
+    <string name="InformacoesAdicionais">Aceitamos deficientes.</string>
+    <string name="Contato">contato@contato.com - 0800 0000000</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="Termos1">
+        TERMOS E CONDIÇÕES GERAIS DE USO DO APLICATIVO TÔ NA FILA!
+Estes Termos e Condições Gerais aplicam-se ao uso dos serviços oferecidos por NOME DA EMPRESA LTDA, devidamente inscrita no CNPJ/MF sob o nº XX.XXX.XXX/XXXX-XX situada no ENDEREÇO, ESTADO, CEP XXXXX-XXX, doravante denominada TÔ NA FILA!®.
+
+Utilizando nossos serviços, você concorda com os seguintes termos e condições, incluindo políticas adicionais mencionados neste documento e/ou disponíveis por hyperlink. Esses Termos de serviço se aplicam a todos os usuários e contribuidores de conteúdo.
+
+Por favor, leia os Termos de serviço cuidadosamente antes de acessar ou utilizar o nosso site. Ao acessar ou usar qualquer parte do site, você concorda com os Termos de serviço. Se você não concorda com todos os termos e condições deste acordo, então você não pode acessar o site ou usar quaisquer serviços. Estes Termos de serviço são considerados uma oferta, a aceitação é expressamente limitada aos Termos de serviço.
+
+Quaisquer novos recursos ou ferramentas que forem adicionados eventualmente, também devem estar sujeitos aos Termos de serviço. Você pode revisar a versão mais atual dos Termos de serviço quando quiser nesta página. Reservamos o direito de atualizar, alterar ou trocar qualquer parte dos Termos de serviço ao publicar atualizações e/ou alterações no nosso site. É sua responsabilidade verificar as alterações feitas nesta página periodicamente. Seu uso contínuo ou acesso ao site após a publicação de quaisquer alterações constitui aceitação de tais alterações.
+</string>
+
+    <string name="Termos2">
+        SEÇÃO 1 - TERMOS DO APLICATIVO
+
+Ao concordar com os Termos de serviço, você confirma que você é maior de idade em seu estado ou província de residência e que você nos deu seu consentimento para permitir que qualquer um dos seus dependentes menores de idade usem esse site.
+Você não deve usar nossos produtos para qualquer fim ilegal ou não autorizado. Você também não pode, ao usufruir deste Serviço, violar quaisquer leis em sua jurisdição (incluindo, mas não limitado, a leis de direitos autorais).
+Você não deve transmitir nenhum vírus ou qualquer código de natureza destrutiva.
+Violar qualquer um dos Termos tem como consequência a rescisão imediata dos seus Serviços.
+Requisitos mínimos para seu uso: Sistema operacional Android a partir da versão: 000, X de memoria, Y de armazenamento disponível;
+Permissão para acessar gps, abrir guia web, acessar e armazenar dados de redes sociais;
+
+SEÇÃO 2 - CONDIÇÕES GERAIS
+
+Reservamos o direito de recusar o serviço a qualquer pessoa por qualquer motivo a qualquer momento.
+Você entende que o seu conteúdo (não incluindo informações monetárias), pode ser transferido sem criptografia e pode: (a) ser transmitido por várias redes; e (b) sofrer alterações para se adaptar e se adequar às exigências técnicas de conexão de redes ou dispositivos.
+Você concorda em não reproduzir, duplicar, copiar, vender, revender ou explorar qualquer parte do Serviço, uso do Serviço, acesso ao Serviço, ou qualquer contato no site através do qual o serviço é fornecido, sem nossa permissão expressa.
+Os títulos usados neste acordo são incluídos apenas por conveniência e não limitam ou  afetam os Termos.
+
+SEÇÃO 3 - PRECISÃO, INTEGRIDADE E ATUALIZAÇÃO DAS INFORMAÇÕES
+
+O material desse site é fornecido apenas para fins informativos e não deve ser usado como a única base para tomar decisões sem consultar fontes de informações primárias, mais precisas, mais completas ou mais atuais.
+Esse site pode conter certas informações históricas. As informações históricas podem não ser atuais e são fornecidas apenas para sua referência. Reservamos o direito de modificar o conteúdo desse site a qualquer momento, aceitando, você concorda que é de sua responsabilidade monitorar alterações no nosso site.
+
+SEÇÃO 4 - MODIFICAÇÕES DO SERVIÇO E PREÇOS
+
+Os preços dos produtos são sujeitos a alterações sem notificação e são de responsabilidade dos contribuidores de conteúdo.
+Reservamos o direito de, a qualquer momento, modificar ou descontinuar o Serviço (ou qualquer parte ou conteúdo do mesmo) sem notificação em qualquer momento.
+Não nos responsabilizados por você ou por qualquer terceiro por qualquer modificação, alteração de preço, suspensão ou descontinuação do Serviço.
+
+SEÇÃO 5 - PRODUTOS E SERVIÇOS
+
+Certos produtos ou serviços podem estar disponíveis exclusivamente no local. Tais produtos ou serviços podem ter quantidades limitadas e são sujeitos à Política do próprio estabelecimento.
+Reservamos o direito, de limitar o acesso de nossos Serviços para qualquer pessoa, região geográfica ou jurisdição. Podemos exercer esse direito conforme o caso.
+Todas as descrições de produtos ou preços de produtos são sujeitos a alteração a qualquer momento sem notificação, a nosso critério exclusivo.
+Reservamos o direito de descontinuar qualquer produto a qualquer momento, qualquer oferta feita por qualquer estabelecimento ou serviço.
+Não garantimos que a qualidade de quaisquer produtos, serviços, informações ou outros materiais expostos ou obtidos irão atender às suas expectativas.
+
+
+SEÇÃO 6 - FERRAMENTAS OPCIONAIS
+
+Também podemos, futuramente, oferecer novos serviços e/ou recursos através do site (incluindo o lançamento de novas ferramentas e recursos). Tais recursos e/ou serviços novos também devem estar sujeitos a esses Termos de serviço.
+
+
+SEÇÃO 7 - LINKS DE TERCEIROS
+
+Certos produtos, conteúdos e serviços disponíveis pelo nosso Serviço podem incluir materiais de terceiros.
+Os links de terceiros no aplicativo podem direcionar para sites de terceiros que não são afiliados a nós. Não nos responsabilizamos por examinar ou avaliar o conteúdo ou precisão. Não garantimos e nem temos obrigação ou responsabilidade por quaisquer materiais ou sites de terceiros, ou por quaisquer outros materiais, produtos ou serviços de terceiros.
+Não somos responsáveis por quaisquer danos ou prejuízos relacionados com a compra ou uso de mercadorias, serviços, recursos, conteúdo, ou quaisquer outras transações feitas em conexão com quaisquer sites de terceiros. Por favor, revise com cuidado as políticas e práticas de terceiros e certifique-se que você as entende antes de efetuar qualquer transação. As queixas, reclamações, preocupações ou questões relativas a produtos de terceiros devem ser direcionadas ao terceiro.
+
+
+SEÇÃO 8 - FEEDBACK DO USUÁRIO
+
+1) Você pode enviar ideias criativas, sugestões, propostas, planos, ou outros materiais, pelo seguinte e-mail: (COLOCAR E-MAIL CORPORATIVO)
+2) Você concorda que seus comentários não violam qualquer direito de terceiros, incluindo direitos autorais, marcas registradas, privacidade, personalidade ou outro direito pessoal ou de propriedade. Você concorda que os seus comentários não vão conter material difamatório, ilegal, abusivo ou obsceno. Eles também não conterão nenhum vírus ou outro malware que possa afetar a operação do Serviço ou qualquer site relacionado. Você não pode usar um endereço de e-mail falso, fingir ser alguém diferente de si mesmo, ou de outra forma enganar a nós ou terceiros quanto à origem de quaisquer comentários. Você é o único responsável por quaisquer comentários que você faz e pela veracidade deles.
+3) Nós não assumimos qualquer responsabilidade ou obrigação por quaisquer comentários publicados por você ou por qualquer terceiro.
+</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unigranrio.tonafilavf">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- ACTIVITYS CLIENTE -->
+        <activity
+            android:name=".activity.cliente.HistoricoActivity"
+            android:parentActivityName=".activity.cliente.UsuarioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.cliente.FilaUsuarioActivity"
+            android:parentActivityName=".activity.cliente.UsuarioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.cliente.PerfilActivity"
+            android:parentActivityName=".activity.cliente.UsuarioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.cliente.PaginaActivity"
+            android:parentActivityName=".activity.cliente.UsuarioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.cliente.UsuarioActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- ACTIVITYS EMPRESA -->
+        <activity
+            android:name=".activity.empresa.AddClienteActivity"
+            android:parentActivityName=".activity.empresa.EmpresaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.empresa.RegistroActivity"
+            android:parentActivityName=".activity.empresa.EmpresaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.empresa.EmpresaActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- ACTIVITYS COMUM -->
+        <activity
+            android:name=".activity.comum.TermosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.comum.SobreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.comum.CadastrarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.comum.ConectarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.comum.TelaInicialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.comum.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MENSAGEM -->
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_people" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

@@ -1,0 +1,169 @@
+<div class="container">
+      <div class="py-5 text-center">
+        <h2>Cadastro da Conta Empresa</h2>
+        <p class="lead">Preencha abaixo os dados da conta empresa que aparecerá para os usuários do aplicativo.
+            Após cadastrado os dados poderam ser alterados através do aplicativo pelo responsável do estabelecimento cadastrado.</p>
+      </div>
+
+      <div class="row">
+      
+      <div class="col-md-4 order-md-2 mb-4">
+      <div class="row">
+        <h3>Selecione uma Empresa</h3>
+        <form method="post" action="/empresa">
+        <div class="form-row align-items-center">
+          <div class="col-md-9 my-1">
+            <select class="form-control custom-select mr-sm-6" id="selecionaEmpresa" name="empresa" autofocus>
+              <option selected>Escolha...</option>
+              {{#each empresas}}
+              <option value="{{idUsuario}}">{{nome}}</option>
+              {{/each}}
+            </select>
+          </div>
+          
+          <div class="col-md-3 my-1">
+            <button type="submit" class="btn btn-success">Procurar</button>
+          </div>
+        </div>
+      </form>
+
+		</div> 
+
+		<div class="row mt-3">
+			{{#if dadoEmpresa}}
+				<img src="{{dadoEmpresa.urlImagemLogo}}" width="370px" height="400px" class="defaultImage">
+			{{else}}
+				<img src="/image/unknownPlace.jpg" width="370px" height="400px" class="defaultImage">
+			{{/if}}
+		</div>      
+   
+    </div>
+
+        <div class="col-md-8 order-md-1">
+					
+          <h4 class="mb-3"> 
+						Dados da Empresa {{#if dadoEmpresa}}<small>- {{dadoEmpresa.nome}}</small> {{/if}} 
+					</h4>
+          <form id="empresa" method="POST" action="/empresa/update" class="needs-validation" novalidate="" onsubmit="paymentMethod()">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="nome">Nome Fantasia</label>
+                <input type="text" class="form-control" id="Nome" name="nome" placeholder="Nome do estabelecimento" value="{{dadoEmpresa.nome}}" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir um nome.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="categoria">Categoria</label>
+                <input type="text" class="form-control" id="categoria" name="categoria" placeholder="Categoria" value="{{dadoEmpresa.categoria}}" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir uma categoria.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="descricao">Descrição</label>
+              <div class="input-group">
+                <textarea type="text" class="form-control" id="descricao" name="descricao" placeholder="Descrição do estabelecimento" required="">{{dadoEmpresa.descricao}}</textarea>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Descrição é obrigatória.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="horario">Horário de Funcionamento</label>
+                <input type="text" class="form-control" id="horario" name="horario" placeholder="Ex: 10:00 - 22:00" value="{{dadoEmpresa.horario}}" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir um horário.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="preco">Média de Preço</label>
+                <input type="text" class="form-control" id="preco" name="preco" placeholder="Ex: R$ 0 - R$ 100" value="{{dadoEmpresa.preco}}" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir uma Preço.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="informacao">Outras Informações</label>
+              <div class="input-group">
+                <textarea type="text" class="form-control" id="informacao" name="informacao" placeholder="Outras Informações" required="">{{dadoEmpresa.informacao}}</textarea>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="contato">Contato</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="contato" name="contato" placeholder="(xx) xxxx-xxxx" value="{{dadoEmpresa.contato}}" required="">
+                <div class="invalid-feedback">
+                  É obrigatório inserir um contato.
+                </div>
+              </div>
+            </div>
+
+						<div class="row">
+              <div class="col-md-7 mb-3">
+								<label for="contato">Formas de pagamento</label>
+								<br/>
+								<input type="hidden" name="pagamento" value="Pagamento" id="inputHidden">  
+								<input type="hidden" name="idUsuario" value={{dadoEmpresa.idUsuario}}> 
+								<input type="hidden" name="urlImagemLogo" value="{{dadoEmpresa.urlImagemLogo}}">
+								{{#if pagamento}}
+									{{#each pagamento}}
+									<div class="form-check form-check-inline mt-3">
+										<input class="form-check-input" type="checkbox" id={{id}} value={{texto}} {{status}} >
+										<label class="form-check-label" for="inlineCheckbox1">{{texto}}</label>
+									</div>
+									{{/each}}
+								{{else}}
+									<div class="form-check form-check-inline mt-3">
+										<input class="form-check-input" type="checkbox" id="dinheiro" name="dinheiro"  >
+										<label class="form-check-label" for="inlineCheckbox1">Dinheiro</label>
+									</div>
+									<div class="form-check form-check-inline mt-3">
+										<input class="form-check-input" type="checkbox" id="credito" name="credito" value="Crédito" >
+										<label class="form-check-label" for="inlineCheckbox1">Crédito</label>
+									</div>
+									<div class="form-check form-check-inline mt-3">
+										<input class="form-check-input" type="checkbox" id="debito" name="debito" value="Débito"  >
+										<label class="form-check-label" for="inlineCheckbox1">Débito</label>
+									</div>
+									<div class="form-check form-check-inline mt-3">
+										<input class="form-check-input" type="checkbox" id="voucher" name="voucher" value="Voucher" >
+										<label class="form-check-label" for="inlineCheckbox1">Voucher</label>
+									</div>
+								{{/if}}
+              </div>
+             
+            </div>
+
+            </div>
+
+            </div>
+           
+
+
+
+            </div>
+          
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit" id="btnCadastrar" {{btn.ativo}}>Cadastrar Empresa</button>
+          </form>
+        </div>
+      </div>
+      
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2019 TôNaFila! - Developer Dashboard </p>
+      </footer>
+    </div>
+    
+    {{!-- Validador dos checkboxes --}}
+    <script src="/config/formEmpresa.js"></script>
+    
+
+    

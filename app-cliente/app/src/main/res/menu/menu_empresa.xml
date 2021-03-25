@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuAddCliente"
+        android:icon="@drawable/ic_group"
+        android:title="Adicionar Cliente"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuRegistro"
+        android:title="Registro"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuSobre"
+        android:title="Sobre"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuSair"
+        android:title="Sair"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TôNaFila! {{#if title}} - {{title}} {{/if}} </title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/lib/bootstrap/css/signin.css">
+    <link rel="stylesheet" href="/lib/fontawesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/image/favicon.ico" />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCBu7wbuo9cHfka_Db-UakCr8_e7y6cSpk",
+        authDomain: "unrio-testes.firebaseapp.com",
+        databaseURL: "https://unrio-testes.firebaseio.com",
+        projectId: "unrio-testes",
+        storageBucket: "unrio-testes.appspot.com",
+        messagingSenderId: "470342920169",
+        appId: "1:470342920169:web:69c3d13e235e6f6d"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img src="/image/tonafila.svg" width="80"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/criarUsuario">Criar Conta Empresa</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="/empresa">Editar Empresa</a>
+            </li>
+           
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+       {{>_msg}}
+      {{{body}}}
+    </div>
+   
+<script src="/lib/bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="/lib/bootstrap/js/jquery.mask.min.js"></script>
+<script src="/config/phoneMask.js"></script>
+</body>
+</html>

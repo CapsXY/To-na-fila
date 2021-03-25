@@ -1,0 +1,52 @@
+
+    <div class="py-5 text-center">
+        <h2>Cadastrar Conta Empresa</h2>
+        <p class="lead">Cadastrar usuário de acesso empresa na base de dados principal do aplicativo.</p>
+    </div>
+    {{#each error}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+    {{#each success}}
+        <div class="alert alert-success">{{msg}}</div>
+    {{/each}}
+    
+    <form method="post" action="/criarUsuario" class="card p-12">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="nome">Nome da Empresa</label>
+                <input type="text" class="form-control" name="nome" placeholder="Nome da Empresa">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email da Empresa">
+                <small id="emailHelp" class="form-text text-muted">Insira um email exclusivo da administração do estabelecimento</small>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" class="form-control" name="password" placeholder="Insira a Senha">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="confirmpassword">Confirmar Senha</label>
+                        <input type="password" class="form-control" name="confirmpassword" placeholder="Repita a Senha">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar Empresa</button> 
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2019 TôNaFila! - Developer Dashboard </p>
+    </footer>
+
+

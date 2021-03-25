@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/menuPesquisa"
+        android:icon="@drawable/ic_search"
+        android:title="Pesquisa"
+        app:showAsAction="always" />
+    
+    <item
+        android:id="@+id/menuFila"
+        android:icon="@drawable/ic_people"
+        android:title="Verificar fila"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuHistorico"
+        android:icon="@drawable/ic_historico"
+        android:title="Histórico"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuPerfil"
+        android:title="Perfil"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuSobre"
+        android:title="Sobre"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuSair"
+        android:title="Sair"
+        app:showAsAction="never" />
+
+</menu>
